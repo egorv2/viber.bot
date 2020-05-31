@@ -98,7 +98,14 @@ namespace Viber.Bot
 		/// <param name="message">Instance of <see cref="BroadcastMessage"/>.</param>
 		/// <returns>Message token.</returns>
 		Task<long> SendBroadcastMessageAsync(BroadcastMessage message);
-
+		
+		/// <summary>
+		/// Sends carousel message to Viber users.
+		/// </summary>
+		/// <param name="message">Instance of <see cref="BroadcastMessage"/>.</param>
+		/// <returns>Message token.</returns>
+		Task<long> SendCarouselMessageAsync(CarouselMessage message);
+		
 		/// <summary>
 		/// Validate hash.
 		/// </summary>
