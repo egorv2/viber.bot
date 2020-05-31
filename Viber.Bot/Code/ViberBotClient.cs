@@ -128,7 +128,10 @@ namespace Viber.Bot
 
 		/// <inheritdoc />
 		public Task<long> SendBroadcastMessageAsync(BroadcastMessage message) => SendMessageAsync(message, true);
-
+		
+                /// <inheritdoc />
+                public Task<long> SendCarouselMessageAsync(CarouselMessage message) => SendMessageAsync(message);
+		
 		/// <inheritdoc />
 		public bool ValidateWebhookHash(string signatureHeader, string jsonMessage)
 		{
